@@ -5,7 +5,7 @@ cloud.Import('Gestures')
 
 pythonista.editor.WebTab().present()
 g = Gestures.Gestures()
---------------------
+#--------------------
 DOCS_DIR = os.path.expanduser('~/Documents/')
 SITE_DIR = os.path.join(DOCS_DIR, 'site-packages/')
 --------------------

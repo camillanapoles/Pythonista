@@ -5,9 +5,9 @@
 # https://forum.omz-software.com/topic/608/locale-currency-doesn-t-work
 
 import locale
-locale.setlocale(locale.LC_ALL, 'fr_FR')
+locale.setlocale(locale.LC_ALL, 'pt_BR')
 
-import locale; locale.setlocale(locale.LC_ALL, 'de_DE')
+import locale; locale.setlocale(locale.LC_ALL, 'pt_BR')
 
 >>> import locale
 >>> loc = locale.getlocale() # get current locale

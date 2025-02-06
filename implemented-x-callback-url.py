@@ -1,9 +1,10 @@
 # https://forum.omz-software.com/topic/3011/share-code-implemented-x-callback-url
-
+"""
 UIApplication -openURL:sourceApplication:annotation:# --------------------
 -openURL:# --------------------
 -openURL:# --------------------
 pythonista://# --------------------
+"""
 import x_callback_url
 
 url = 'drafts4://x-callback-url/get?uuid=YOUR_UUID&x-success=pythonista://'

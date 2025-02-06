@@ -1,0 +1,64 @@
+
+
+=== 2025-02-06 - 16:36
+import os, sys, inspect
+# realpath() will make your script run, even if you symlink it :)
+cmd_folder = os.path.realpath(os.path.abspath(os.path.split(inspect.getfile(    inspect.currentframe() ))[0]))
+if cmd_folder not in sys.path:
+	sys.path.insert(0, cmd_folder)
+	
+# use this if you want to include modules from a subfolder
+cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"subfolder")))
+if cmd_subfolder not in sys.path:
+	sys.path.insert(0, cmd_subfolder)
+
+=== 2025-02-06 - 16:36
+import os, sys, inspect
+# realpath() will make your script run, even if you symlink it :)
+cmd_folder = os.path.realpath(os.path.abspath(os.path.split(inspect.getfile(    inspect.currentframe() ))[0]))
+if cmd_folder not in sys.path:
+	sys.path.insert(0, cmd_folder)
+	
+# use this if you want to include modules from a subfolder
+cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"subfolder")))
+if cmd_subfolder not in sys.path:
+	sys.path.insert(0, cmd_subfolder)
+	
+
+=== 2025-02-06 - 16:39
+import cloud
+
+cloud.Import('pythonista.editor')
+cloud.Import('Gestures')
+
+pythonista.editor.WebTab().present()
+g = Gestures.Gestures()
+--------------------
+DOCS_DIR = os.path.expanduser('~/Documents/')
+SITE_DIR = os.path.join(DOCS_DIR, 'site-packages/')
+--------------------
+import json
+
+with open("modules.json", "r") as f:
+	modules = json.load(f)
+--------------------
+import requests
+
+modules = requests.get("https://example.com/modules.json").json
+--------------------
+
+
+=== 2025-02-06 - 16:39
+import cloud
+
+cloud.Import('pythonista.editor')
+cloud.Import('Gestures')
+
+pythonista.editor.WebTab().present()
+g = Gestures.Gestures()
+--------------------
+DOCS_DIR = os.path.expanduser('~/Documents/')
+SITE_DIR = os.path.join(DOCS_DIR, 'site-packages/')
+
+=== 2025-02-06 - 16:40
+DOCS_DIR
